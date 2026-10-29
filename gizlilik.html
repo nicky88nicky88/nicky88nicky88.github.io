@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gizlilik Politikası · STD Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Gizlilik Politikası</h1>
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+    <a href="kullanim-sartlari.html">Kullanım Şartları</a>
+  </nav>
+  <p class="muted">Son güncelleme: 29 Ekim 2026</p>
+
+  <h2>Kısaca</h2>
+  <p>STD Control, programı kullanan kurumun kendi bilgisayarında çalışır. Öğrenci bilgileri, sınav sonuçları,
+    sertifikalar ve istatistikler o bilgisayarda (kurumun seçtiği veri klasöründe) saklanır.
+    <strong>Program geliştiricisine hiçbir veri gönderilmez.</strong></p>
+
+  <h2>Öğrenci verileri</h2>
+  <p>Programa girilen öğrenci verilerinden (ad, sınıf, telefon, sınav sonuçları) programı kullanan kurum
+    sorumludur. Bu veriler geliştiricinin herhangi bir sunucusuna aktarılmaz.</p>
+
+  <h2>Google hesabı ve Google Drive</h2>
+  <p>Kurum isterse programı kendi Google hesabına bağlar. Bağlantı yalnızca kullanıcının açık izniyle,
+    Google'ın kendi giriş ekranı üzerinden kurulur. Program Google'dan yalnızca şu izni ister:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/drive.file</code>: yalnızca programın kendi oluşturduğu
+      dosya ve klasörleri görme, oluşturma, değiştirme ve silme. Program Drive'daki diğer dosyalara erişemez.</li>
+  </ul>
+  <p>Bu izinle program:</p>
+  <ul>
+    <li>Kurumun Drive'ında <code>STD_Control_exam_data_share</code> adlı bir klasör, onun içinde her sınav ve
+      her öğrenci için alt klasörler oluşturur;</li>
+    <li>programda üretilen sertifika ve istatistik dosyalarını bu klasörlere yükler, güncellenen dosyayı
+      değiştirir, bilgisayarda silinen dosyayı Drive'dan da siler;</li>
+    <li>yalnızca öğrenci klasörlerini "bağlantıya sahip olan herkes görüntüleyebilir" olarak paylaşır;
+      bağlantı yalnızca o öğrenciye gönderilir. Sınav klasörü ve istatistikler paylaşılmaz;</li>
+    <li>bağlı hesabın e-posta adresini ve adını yalnızca programda "bağlı hesap" olarak göstermek için okur.</li>
+  </ul>
+  <p>Google'ın verdiği erişim anahtarı yalnızca programın kurulu olduğu bilgisayarda, Windows'un şifreleme
+    altyapısıyla (DPAPI) şifrelenmiş olarak saklanır. Google'dan alınan hiçbir veri geliştiriciye ya da
+    üçüncü kişilere aktarılmaz, satılmaz ve reklam amacıyla kullanılmaz. Dosyalar kurumun kendi Google
+    Drive'ında durur; kurum onları istediği zaman silebilir.</p>
+  <p>İzin her an geri alınabilir: programda Ayarlar → Bulut → "Bağlantıyı Kes" ile ya da
+    <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a> adresinden.</p>
+
+  <h2>Diğer bağlantılar</h2>
+  <ul>
+    <li><strong>Güncelleme denetimi:</strong> program yeni sürümleri GitHub üzerinden denetler ve indirir;
+      bu sırada kurum verisi gönderilmez.</li>
+    <li><strong>WhatsApp ve SMS:</strong> mesajlar, kurumun kendi seçtiği ve kendi hesabıyla kullandığı hizmet
+      (WhatsApp Web, WhatsApp Business Platform ya da SMS sağlayıcısı) üzerinden gönderilir; alıcının telefon
+      numarası ve mesaj metni yalnızca o hizmete iletilir.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p lang="en">STD Control's use and transfer to any other app of information received from Google APIs will
+    adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Değişiklikler ve iletişim</h2>
+  <p>Bu politika değişirse güncel hali bu sayfada yayınlanır. Sorularınız için:
+    <a href="mailto:zzaxis88@gmail.com">zzaxis88@gmail.com</a></p>
+
+  <footer>
+    © 2025–2026 Aziz Yusuf · <a href="index.html">Ana Sayfa</a> · <a href="kullanim-sartlari.html">Kullanım Şartları</a>
+  </footer>
+</main>
+</body>
+</html>
